@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sshahini.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:label="7Learn"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.ProfileActivity"
+            android:label="اطلاعات کاربری"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.activity.PostsActivity"
+            android:label="آخرین پست ها"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.BotickActivity"
+            android:label="بوتیک"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.WeatherSampleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.PostActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".animations.AnimationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".animations.AnimationsMainActivity"
+            android:label="@string/animations_main_activity_toolbar_title"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.SignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.MusicPlayerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".CustomBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.example.sshahini.myapplication.test" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".WeatherWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.sshahini.myapplication.UPDATE_DATA" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_widget_info" />
+        </receiver>
+
+        <service android:name=".service.WeatherInfoDownloaderService" />
+        <service android:name=".service.MusicPlayerService" />
+
+        <activity
+            android:name=".view.activity.MapActivity"
+            android:label="گوگل مپ"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBszwFE18lQCoXHR-oY-jBhF2Kbu6azSCw" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_notification" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name=".view.activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

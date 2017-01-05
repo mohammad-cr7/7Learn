@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_menu_main_activity" android:title="صفحه اصلی" />
+    <item android:id="@+id/navigation_menu_profile" android:title="پروفایل"/>
+    <item android:id="@+id/navigation_menu_store" android:title="فروشگاه"/>
+    <group>
+        <item android:id="@+id/contact_us" android:title="ارتباط با ما"/>
+        <item android:id="@+id/setting" android:title="تنظیمات"/>
+    </group>
+</menu>

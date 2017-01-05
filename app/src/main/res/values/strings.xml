@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">7Learn</string>
+    <string name="user_welcome_message">Hello World</string>
+    <string name="app_feature_latest_posts">لیست آخرین پست ها</string>
+    <string name="app_feature_user_profile">پروفایل کاربر</string>
+    <string name="app_feature_fashion">فروشگاه لباس</string>
+    <string name="app_feature_music_player">موزیک پلیر</string>
+    <string name="app_feature_video_player">ویدیو پلیر</string>
+    <string name="app_feature_login">ورود به حساب کاربری</string>
+    <string name="app_feature_animations_in_android">انیمیشن در اندروید</string>
+    <string name="animations_alpha">Alpha</string>
+    <string name="animations_translate">Translate</string>
+    <string name="animations_scale">Scale</string>
+    <string name="animations_rotate">Rotate</string>
+    <string name="animations_value_animator">Value Animator</string>
+    <string name="animations_animation_set">Animation Set</string>
+    <string name="animations_yoyo">Yoyo</string>
+
+    <string name="animations_label_list_of_animations">لیست انیمیشن ها در اندروید:</string>
+    <string name="animations_main_activity_toolbar_title">انیمیشن در اندروید</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="map_distance_label">فاصله شما تا مقصد: </string>
+    <string name="map_distance_metric_label"> کیلومتر</string>
+    <string name="menu_title_view_github">Github</string>
+    <string name="menu_title_view_profile">پروفایل</string>
+    <string name="menu_title_sign_out">خروج</string>
+    <string name="label_login_amoozesh">آموزش صفر تا صد اندروید</string>
+    <string name="label_login">ورود به حساب کاربری</string>
+    <string name="label_sign_up">ایجاد حساب کاربری</string>
+    <string name="label_authentication_email_hint">آدرس ایمیل</string>
+    <string name="label_authentication_password_hint">رمز عبور</string>
+
+</resources>

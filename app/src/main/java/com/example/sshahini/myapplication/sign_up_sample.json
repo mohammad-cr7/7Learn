@@ -1,0 +1,12 @@
+{
+  "first_name":"ali",
+  "last_name":"ahmadi",
+  "age":25,
+  "gender":"male",
+  "has_job":false,
+  "skills":[
+    "Html",
+    "Css",
+    "Java"
+  ]
+}

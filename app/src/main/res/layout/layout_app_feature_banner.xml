@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ss.com.bannerslider.views.BannerSlider
+        android:id="@+id/banner_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        app:loopSlides="true"
+        app:defaultIndicators="circle"
+        app:interval="5000"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_margin">
+            <ImageView
+                android:id="@+id/icon_list"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_app_features_list"/>
+            <TextView
+                android:id="@+id/label_app_features_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/icon_list"
+                android:text="لیست مطالب"/>
+        </RelativeLayout>
+
+</LinearLayout>

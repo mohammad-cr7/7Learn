@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5fd080</color>
+    <color name="colorPrimaryDark">#43965b</color>
+    <color name="colorAccent">#607d8b</color>
+    <color name="colorAccentDark">#3f515a</color>
+    <color name="colorPrimaryTransparent">#aa5fd080</color>
+    <color name="white">#ffff</color>
+
+    <color name="color_visited_post">#ECF0F1</color>
+    <color name="color_not_visited_post">@android:color/white</color>
+    <color name="color_orange">#ffc71c</color>
+    <color name="color_orange_dark">#F89406</color>
+    <color name="color_blue">#1bbc9b</color>
+    <color name="color_blue_dark">#aa1bbc9b</color>
+    <color name="music_player_dark_gray">#424242</color>
+</resources>
